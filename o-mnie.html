@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>O mnie | Szymon: AI i automatyzacje</title>
+    <meta name="description" content="Student zarządzania na UEK, absolwent technikum informatycznego. Wykształcenie, doświadczenie, umiejętności i kontakt." />
+    <meta name="theme-color" content="#070b14" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Szymon, strona główna">
+          <span class="logo-mark" aria-hidden="true">S</span>
+          <span class="logo-text">Szymon<span class="logo-dot">.</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Główna nawigacja">
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="projekty.html">Projekty</a></li>
+            <li><a href="jak-pracuje.html">Jak pracuję</a></li>
+            <li><a href="o-mnie.html" aria-current="page">O mnie</a></li>
+          </ul>
+          <a class="btn btn-primary btn-sm" href="#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="hero-bg" aria-hidden="true">
+          <span class="blob blob-1"></span>
+          <span class="blob blob-2"></span>
+          <div class="hero-grid"></div>
+        </div>
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow" data-reveal>O mnie</span>
+            <h1 id="page-title" data-reveal style="--d: 1">Cześć, jestem Szymon</h1>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ KIM JESTEM ============ -->
+      <section class="section section-tight" aria-labelledby="who-title">
+        <div class="container about-intro">
+          <!--
+            ZDJĘCIE: wrzuć plik do assets/img/ i odkomentuj linię <img> poniżej.
+            Bez zdjęcia zostaje monogram „S”.
+          -->
+          <div class="avatar" data-reveal>
+            <span class="avatar-monogram gradient-text" aria-hidden="true">S</span>
+            <!-- <img src="assets/img/zdjecie.webp" alt="Szymon [Nazwisko], zdjęcie portretowe" width="640" height="800" /> -->
+            <span class="avatar-note ph">[TU ZDJĘCIE: opcjonalnie]</span>
+          </div>
+
+          <div class="about-text" data-reveal style="--d: 1">
+            <h2 id="who-title">Kim jestem</h2>
+            <p class="lead"><span class="ph">[TU 2–3 ZDANIA O SOBIE: kim jesteś i czym się zajmujesz]</span></p>
+            <p class="lead"><span class="ph">[TU 1–2 ZDANIA: dlaczego automatyzacje i AI]</span></p>
+
+            <dl class="facts">
+              <div class="fact">
+                <dt>Studia</dt>
+                <dd>Zarządzanie, UEK w Krakowie (2. rok)</dd>
+              </div>
+              <div class="fact">
+                <dt>Szkoła średnia</dt>
+                <dd>Technikum informatyczne</dd>
+              </div>
+              <div class="fact">
+                <dt>Tryb pracy</dt>
+                <dd>Zdalnie, <span class="ph">[DOSTĘPNOŚĆ, np. godz./tydz.]</span></dd>
+              </div>
+              <div class="fact">
+                <dt>Języki</dt>
+                <dd><span class="ph">[TU JĘZYKI I POZIOMY]</span></dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ WYKSZTAŁCENIE ============ -->
+      <section class="section section-tight" aria-labelledby="edu-title">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Wykształcenie</span>
+            <h2 id="edu-title">Biznes + <span class="gradient-text">technologia</span></h2>
+          </div>
+          <div class="cards-2">
+            <article class="info-card glass" data-reveal style="--d: 0">
+              <span class="meta ph">[ROK] – obecnie</span>
+              <h3>Uniwersytet Ekonomiczny w Krakowie</h3>
+              <p>Zarządzanie, studia I stopnia, 2. rok</p>
+              <ul>
+                <li><span class="ph">[TU PRZEDMIOT / OBSZAR PRZYDATNY W PRACY]</span></li>
+                <li><span class="ph">[TU PRZEDMIOT / OBSZAR]</span></li>
+              </ul>
+            </article>
+            <article class="info-card glass" data-reveal style="--d: 1">
+              <span class="meta ph">[ROK – ROK]</span>
+              <h3>Technikum informatyczne</h3>
+              <p><span class="ph">[TU NAZWA SZKOŁY lub zostaw ogólnie]</span></p>
+              <ul>
+                <li><span class="ph">[TU CZEGO SIĘ NAUCZYŁEŚ / KWALIFIKACJE]</span></li>
+                <li><span class="ph">[TU CZEGO SIĘ NAUCZYŁEŚ]</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ DOŚWIADCZENIE ============ -->
+      <section class="section section-tight" aria-labelledby="exp-title">
+        <div class="container">
+          <div class="section-head" data-reveal>
+            <span class="eyebrow">Doświadczenie</span>
+            <h2 id="exp-title">Doświadczenie</h2>
+            <p class="lead"><span class="ph">[TU: praca, praktyki, koła naukowe, wolontariat, projekty na studiach]</span></p>
+          </div>
+          <div class="cards-2">
+            <article class="info-card glass" data-reveal style="--d: 0">
+              <span class="meta ph">[OKRES]</span>
+              <h3><span class="ph">[STANOWISKO / ROLA]</span></h3>
+              <p><span class="ph">[MIEJSCE: możesz opisać ogólnie, bez nazwy]</span></p>
+              <ul>
+                <li><span class="ph">[TU OBOWIĄZEK / OSIĄGNIĘCIE]</span></li>
+                <li><span class="ph">[TU OBOWIĄZEK / OSIĄGNIĘCIE]</span></li>
+              </ul>
+            </article>
+            <article class="info-card glass" data-reveal style="--d: 1">
+              <span class="meta ph">[OKRES]</span>
+              <h3><span class="ph">[STANOWISKO / ROLA]</span></h3>
+              <p><span class="ph">[MIEJSCE]</span></p>
+              <ul>
+                <li><span class="ph">[TU OBOWIĄZEK / OSIĄGNIĘCIE]</span></li>
+                <li><span class="ph">[TU OBOWIĄZEK / OSIĄGNIĘCIE]</span></li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ UMIEJĘTNOŚCI (skrót) ============ -->
+      <section class="section section-tight" aria-labelledby="skills-title">
+        <div class="container">
+          <div class="section-head-row">
+            <div class="section-head" data-reveal>
+              <span class="eyebrow">Umiejętności</span>
+              <h2 id="skills-title">W skrócie</h2>
+            </div>
+            <a class="link-arrow" href="jak-pracuje.html" data-reveal>
+              Poziomy i oś czasu nauki
+              <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+            </a>
+          </div>
+          <ul class="skill-cloud" data-reveal>
+            <li>Power Automate</li>
+            <li>Power BI</li>
+            <li>SharePoint</li>
+            <li>Excel</li>
+            <li>Microsoft Forms</li>
+            <li><span class="ph">[NARZĘDZIA AI]</span></li>
+            <li><span class="ph">[INNE]</span></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ KONTAKT ============ -->
+      <!-- Etap 2: wpisz e-mail w 3 miejscach: href="mailto:…", data-copy="…" i w <strong> -->
+      <section class="section section-tight" id="kontakt" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="contact-panel glass" data-reveal>
+            <div class="contact-copy">
+              <span class="eyebrow">Kontakt</span>
+              <h2 id="contact-title">Porozmawiajmy o <span class="gradient-text">automatyzacji</span></h2>
+              <p class="lead"><span class="ph">[TU 1–2 ZDANIA: jak i kiedy najlepiej się kontaktować]</span></p>
+              <div class="hero-cta">
+                <a class="btn btn-primary" href="mailto:TU-EMAIL@example.com">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg>
+                  Napisz e-mail
+                </a>
+                <a class="btn btn-ghost" href="#" aria-disabled="true">
+                  <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11M7 10l5 5 5-5M5 20h14" /></svg>
+                  Pobierz CV (PDF) <span class="sr-only">(wkrótce)</span>
+                </a>
+              </div>
+            </div>
+
+            <div>
+              <ul class="contact-list">
+                <li class="contact-item">
+                  <span class="badge" aria-hidden="true"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2" /><path d="m3 7 9 6 9-6" /></svg></span>
+                  <span><small>E-mail</small><strong class="ph">[TU E-MAIL]</strong></span>
+                  <button class="copy-btn" type="button" data-copy="TU-EMAIL@example.com" aria-label="Skopiuj adres e-mail">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="9" y="9" width="11" height="11" rx="2" /><path d="M5 15V5a2 2 0 0 1 2-2h8" /></svg>
+                  </button>
+                </li>
+                <li>
+                  <a class="contact-item" href="#" aria-disabled="true">
+                    <span class="badge" aria-hidden="true">in</span>
+                    <span><small>LinkedIn</small><strong class="ph">[TU LINK: wkrótce]</strong></span>
+                  </a>
+                </li>
+                <li>
+                  <a class="contact-item" href="#" aria-disabled="true">
+                    <span class="badge" aria-hidden="true">
+                      <svg class="icon" viewBox="0 0 24 24"><path d="m8 7-5 5 5 5M16 7l5 5-5 5" /></svg>
+                    </span>
+                    <span><small>GitHub</small><strong class="ph">[TU LINK: wkrótce]</strong></span>
+                  </a>
+                </li>
+              </ul>
+              <p class="copy-status" role="status" aria-live="polite"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year>2026</span> Szymon <span class="ph">[Nazwisko]</span></p>
+        <nav class="footer-links" aria-label="Stopka">
+          <a href="projekty.html">Projekty</a>
+          <a href="jak-pracuje.html">Jak pracuję</a>
+          <a href="o-mnie.html">O mnie</a>
+          <a href="o-mnie.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>

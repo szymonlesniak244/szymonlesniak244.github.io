@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projekty | Szymon: AI i automatyzacje</title>
+    <meta name="description" content="Projekty automatyzacji i raportowania: Power Automate, Power BI, SharePoint, Excel i narzędzia AI." />
+    <meta name="theme-color" content="#070b14" />
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="js/main.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Przejdź do treści</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html" aria-label="Szymon, strona główna">
+          <span class="logo-mark" aria-hidden="true">S</span>
+          <span class="logo-text">Szymon<span class="logo-dot">.</span></span>
+        </a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+          <span class="sr-only">Menu</span>
+          <span class="nav-toggle-bars" aria-hidden="true"></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Główna nawigacja">
+          <ul>
+            <li><a href="index.html">Start</a></li>
+            <li><a href="projekty.html" aria-current="page">Projekty</a></li>
+            <li><a href="jak-pracuje.html">Jak pracuję</a></li>
+            <li><a href="o-mnie.html">O mnie</a></li>
+          </ul>
+          <a class="btn btn-primary btn-sm" href="o-mnie.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="page-hero" aria-labelledby="page-title">
+        <div class="hero-bg" aria-hidden="true">
+          <span class="blob blob-1"></span>
+          <span class="blob blob-2"></span>
+          <div class="hero-grid"></div>
+        </div>
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow" data-reveal>Portfolio</span>
+            <h1 id="page-title" data-reveal style="--d: 1">Projekty</h1>
+            <p class="lead" data-reveal style="--d: 2"><span class="ph">[TU 1–2 ZDANIA WSTĘPU: co znajdziesz w projektach]</span></p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight" aria-label="Lista projektów">
+        <div class="container">
+          <!--
+            JEDNA KARTA = jeden <article>. Przycisk data-open="projekt-1"
+            otwiera okno <dialog id="projekt-1"> niżej na stronie.
+            Obraz: zamień <div class="media-ph">…</div> na
+            <img class="media" src="assets/img/projekt-1.webp" alt="Opis zrzutu" loading="lazy" width="1600" height="1000">
+          -->
+          <div class="projects-grid">
+            <!-- PROJEKT 1 -->
+            <article class="project-card glass" data-tilt data-reveal style="--d: 0">
+              <div class="media-ph"><span>[TU ZRZUT EKRANU / GIF]</span></div>
+              <div class="project-body">
+                <p class="project-num">Projekt 01</p>
+                <h2 class="h3-like"><span class="ph">[TU TYTUŁ PROJEKTU 1]</span></h2>
+                <ul class="tags" aria-label="Narzędzia"><li>Power Automate</li><li>Microsoft Forms</li><li>Excel</li></ul>
+                <ol class="pse">
+                  <li><b>Problem</b><span class="ph">[1 zdanie]</span></li>
+                  <li><b>Rozwiązanie</b><span class="ph">[1 zdanie]</span></li>
+                  <li><b>Efekt</b><span class="ph">[1 zdanie]</span></li>
+                </ol>
+                <div class="project-actions">
+                  <button class="btn btn-primary btn-sm" type="button" data-open="projekt-1">Szczegóły</button>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6M9 14h6M9 17h4" /></svg>
+                    Raport PDF <span class="sr-only">(wkrótce)</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJEKT 2 -->
+            <article class="project-card glass" data-tilt data-reveal style="--d: 1">
+              <div class="media-ph"><span>[TU ZRZUT EKRANU / GIF]</span></div>
+              <div class="project-body">
+                <p class="project-num">Projekt 02</p>
+                <h2 class="h3-like"><span class="ph">[TU TYTUŁ PROJEKTU 2]</span></h2>
+                <ul class="tags" aria-label="Narzędzia"><li>Power BI</li><li>Excel</li></ul>
+                <ol class="pse">
+                  <li><b>Problem</b><span class="ph">[1 zdanie]</span></li>
+                  <li><b>Rozwiązanie</b><span class="ph">[1 zdanie]</span></li>
+                  <li><b>Efekt</b><span class="ph">[1 zdanie]</span></li>
+                </ol>
+                <div class="project-actions">
+                  <button class="btn btn-primary btn-sm" type="button" data-open="projekt-2">Szczegóły</button>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6M9 14h6M9 17h4" /></svg>
+                    Raport PDF <span class="sr-only">(wkrótce)</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <!-- PROJEKT 3 -->
+            <article class="project-card glass" data-tilt data-reveal style="--d: 2">
+              <div class="media-ph"><span>[TU ZRZUT EKRANU / GIF]</span></div>
+              <div class="project-body">
+                <p class="project-num">Projekt 03</p>
+                <h2 class="h3-like"><span class="ph">[TU TYTUŁ PROJEKTU 3]</span></h2>
+                <ul class="tags" aria-label="Narzędzia"><li>SharePoint</li><li>Power Automate</li><li>AI</li></ul>
+                <ol class="pse">
+                  <li><b>Problem</b><span class="ph">[1 zdanie]</span></li>
+                  <li><b>Rozwiązanie</b><span class="ph">[1 zdanie]</span></li>
+                  <li><b>Efekt</b><span class="ph">[1 zdanie]</span></li>
+                </ol>
+                <div class="project-actions">
+                  <button class="btn btn-primary btn-sm" type="button" data-open="projekt-3">Szczegóły</button>
+                  <a class="btn btn-ghost btn-sm" href="#" aria-disabled="true">
+                    <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6M9 14h6M9 17h4" /></svg>
+                    Raport PDF <span class="sr-only">(wkrótce)</span>
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <p class="projects-note" data-reveal>
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 3v6c0 5-3.5 8-8 9-4.5-1-8-4-8-9V6z" /></svg>
+            Wszystkie dane w projektach są fikcyjne i służą tylko do prezentacji.
+          </p>
+        </div>
+      </section>
+
+      <section class="section section-tight" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta glass" data-reveal>
+            <span class="eyebrow">Kontakt</span>
+            <h2 id="cta-title">Chcesz zobaczyć, jak to <span class="gradient-text">działa na żywo?</span></h2>
+            <p class="lead"><span class="ph">[TU 1 ZDANIE, np. propozycja krótkiej rozmowy lub demo]</span></p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="o-mnie.html#kontakt">
+                Skontaktuj się
+                <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ OKNA ZE SZCZEGÓŁAMI PROJEKTÓW ============ -->
+    <dialog class="modal" id="projekt-1" aria-labelledby="projekt-1-title">
+      <button class="modal-close" type="button" data-close aria-label="Zamknij szczegóły projektu">✕</button>
+      <div class="media-ph"><span>[TU WIĘKSZY ZRZUT EKRANU / GIF]</span></div>
+      <div class="modal-body">
+        <div>
+          <p class="project-num">Projekt 01</p>
+          <h2 id="projekt-1-title"><span class="ph">[TU TYTUŁ PROJEKTU 1]</span></h2>
+        </div>
+        <ul class="tags" aria-label="Narzędzia"><li>Power Automate</li><li>Microsoft Forms</li><li>Excel</li></ul>
+        <div class="pse-grid">
+          <div class="pse-block"><h3>Problem</h3><p><span class="ph">[TU 2–3 ZDANIA: co zajmowało czas / co było ręczne]</span></p></div>
+          <div class="pse-block"><h3>Rozwiązanie</h3><p><span class="ph">[TU 2–3 ZDANIA: co zbudowałeś i jak]</span></p></div>
+          <div class="pse-block"><h3>Efekt</h3><p><span class="ph">[TU 2–3 ZDANIA: co się zmieniło]</span></p></div>
+        </div>
+        <div>
+          <h3>Przebieg krok po kroku</h3>
+          <p><span class="ph">[TU KROKI: wyzwalacz → akcje → wynik]</span></p>
+        </div>
+        <div>
+          <h3>Rola AI i moja weryfikacja</h3>
+          <p><span class="ph">[TU: w czym pomogło AI i jak sprawdziłeś wynik]</span></p>
+        </div>
+        <div class="project-actions">
+          <a class="btn btn-primary" href="#" aria-disabled="true">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6M9 14h6M9 17h4" /></svg>
+            Raport PDF <span class="sr-only">(wkrótce)</span>
+          </a>
+          <button class="btn btn-ghost" type="button" data-close>Zamknij</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="projekt-2" aria-labelledby="projekt-2-title">
+      <button class="modal-close" type="button" data-close aria-label="Zamknij szczegóły projektu">✕</button>
+      <div class="media-ph"><span>[TU WIĘKSZY ZRZUT EKRANU / GIF]</span></div>
+      <div class="modal-body">
+        <div>
+          <p class="project-num">Projekt 02</p>
+          <h2 id="projekt-2-title"><span class="ph">[TU TYTUŁ PROJEKTU 2]</span></h2>
+        </div>
+        <ul class="tags" aria-label="Narzędzia"><li>Power BI</li><li>Excel</li></ul>
+        <div class="pse-grid">
+          <div class="pse-block"><h3>Problem</h3><p><span class="ph">[TU 2–3 ZDANIA]</span></p></div>
+          <div class="pse-block"><h3>Rozwiązanie</h3><p><span class="ph">[TU 2–3 ZDANIA]</span></p></div>
+          <div class="pse-block"><h3>Efekt</h3><p><span class="ph">[TU 2–3 ZDANIA]</span></p></div>
+        </div>
+        <div>
+          <h3>Przebieg krok po kroku</h3>
+          <p><span class="ph">[TU KROKI]</span></p>
+        </div>
+        <div>
+          <h3>Rola AI i moja weryfikacja</h3>
+          <p><span class="ph">[TU: w czym pomogło AI i jak sprawdziłeś wynik]</span></p>
+        </div>
+        <div class="project-actions">
+          <a class="btn btn-primary" href="#" aria-disabled="true">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6M9 14h6M9 17h4" /></svg>
+            Raport PDF <span class="sr-only">(wkrótce)</span>
+          </a>
+          <button class="btn btn-ghost" type="button" data-close>Zamknij</button>
+        </div>
+      </div>
+    </dialog>
+
+    <dialog class="modal" id="projekt-3" aria-labelledby="projekt-3-title">
+      <button class="modal-close" type="button" data-close aria-label="Zamknij szczegóły projektu">✕</button>
+      <div class="media-ph"><span>[TU WIĘKSZY ZRZUT EKRANU / GIF]</span></div>
+      <div class="modal-body">
+        <div>
+          <p class="project-num">Projekt 03</p>
+          <h2 id="projekt-3-title"><span class="ph">[TU TYTUŁ PROJEKTU 3]</span></h2>
+        </div>
+        <ul class="tags" aria-label="Narzędzia"><li>SharePoint</li><li>Power Automate</li><li>AI</li></ul>
+        <div class="pse-grid">
+          <div class="pse-block"><h3>Problem</h3><p><span class="ph">[TU 2–3 ZDANIA]</span></p></div>
+          <div class="pse-block"><h3>Rozwiązanie</h3><p><span class="ph">[TU 2–3 ZDANIA]</span></p></div>
+          <div class="pse-block"><h3>Efekt</h3><p><span class="ph">[TU 2–3 ZDANIA]</span></p></div>
+        </div>
+        <div>
+          <h3>Przebieg krok po kroku</h3>
+          <p><span class="ph">[TU KROKI]</span></p>
+        </div>
+        <div>
+          <h3>Rola AI i moja weryfikacja</h3>
+          <p><span class="ph">[TU: w czym pomogło AI i jak sprawdziłeś wynik]</span></p>
+        </div>
+        <div class="project-actions">
+          <a class="btn btn-primary" href="#" aria-disabled="true">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6M9 14h6M9 17h4" /></svg>
+            Raport PDF <span class="sr-only">(wkrótce)</span>
+          </a>
+          <button class="btn btn-ghost" type="button" data-close>Zamknij</button>
+        </div>
+      </div>
+    </dialog>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year>2026</span> Szymon <span class="ph">[Nazwisko]</span></p>
+        <nav class="footer-links" aria-label="Stopka">
+          <a href="projekty.html">Projekty</a>
+          <a href="jak-pracuje.html">Jak pracuję</a>
+          <a href="o-mnie.html">O mnie</a>
+          <a href="o-mnie.html#kontakt">Kontakt</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
