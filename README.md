@@ -14,4 +14,4 @@ Czysty HTML, CSS i JS, bez frameworków i bez instalowania czegokolwiek.
 - **Słowa w efekcie pisania:** atrybut `data-words` w `index.html`.
 - **Zdjęcia projektów:** `assets/img/`, raporty PDF i CV: `assets/pdf/`.
 - **Projekty** są w 2 miejscach: skrót na `index.html` i pełna wersja na `projekty.html`.
-- **Liczniki:** `data-count="5"` na `jak-pracuje.html`. Wpisuj tylko prawdziwe liczby.
+- **Poziomy umiejętności:** `jak-pracuje.html`, klasa `on` na kreskach (1–4).
