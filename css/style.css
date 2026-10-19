@@ -1054,8 +1054,8 @@ ol {
 .pse li {
   position: relative;
   display: grid;
-  grid-template-columns: 104px 1fr;
-  gap: 12px;
+  grid-template-columns: 1fr;
+  gap: 2px;
   align-items: baseline;
   font-size: 0.9375rem;
   color: var(--text-muted);
@@ -1897,7 +1897,7 @@ a.contact-item:hover {
 .meter {
   grid-column: 1 / -1;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 4px;
 }
 
@@ -1914,7 +1914,7 @@ a.contact-item:hover {
 
 .legend-meter {
   display: inline-grid;
-  grid-template-columns: repeat(3, 14px);
+  grid-template-columns: repeat(4, 12px);
   gap: 3px;
 }
 
@@ -2375,4 +2375,86 @@ a.contact-item:hover {
 .modal:focus,
 .modal:focus-visible {
   outline: none;
+}
+
+/* Zrzuty ekranu w kartach i oknach projektów */
+.media {
+  height: auto;
+  object-position: center top;
+  background: #fff;
+}
+
+.modal .media {
+  aspect-ratio: auto;
+  max-height: 420px;
+  object-fit: contain;
+}
+
+.steps-list {
+  display: grid;
+  gap: 8px;
+  counter-reset: krok;
+}
+
+.steps-list li {
+  position: relative;
+  padding-left: 40px;
+  color: var(--text-muted);
+  counter-increment: krok;
+}
+
+.steps-list li::before {
+  content: counter(krok);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  border: 1px solid rgb(45 226 196 / 0.4);
+  background: rgb(45 226 196 / 0.08);
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  font-weight: 600;
+}
+
+.modal-figure {
+  margin: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.modal-figure img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+}
+
+.modal-figure figcaption {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+}
+
+/* Wyróżniona grupa umiejętności (AI) i chmurka umiejętności */
+.skill-group-featured {
+  border-color: rgb(45 226 196 / 0.35);
+  background:
+    radial-gradient(120% 80% at 0% 0%, rgb(45 226 196 / 0.14), transparent 60%),
+    linear-gradient(180deg, rgb(255 255 255 / 0.065), rgb(255 255 255 / 0.02));
+}
+
+.skill-cloud li small {
+  margin-left: 6px;
+  color: var(--text-muted);
+  font-size: 0.75rem;
+}
+
+.skill-cloud li.skill-strong {
+  border-color: rgb(45 226 196 / 0.5);
+  background: rgb(45 226 196 / 0.1);
+  color: #b9f5ea;
 }
