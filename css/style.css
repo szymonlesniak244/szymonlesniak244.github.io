@@ -2458,3 +2458,53 @@ a.contact-item:hover {
   background: rgb(45 226 196 / 0.1);
   color: #b9f5ea;
 }
+
+/* Doświadczenie: 3 karty i lista innych prac */
+.cards-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.other-exp-title {
+  margin: 40px 0 16px;
+  font-size: 1.125rem;
+}
+
+.other-exp {
+  display: grid;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.other-exp li {
+  display: grid;
+  grid-template-columns: 180px 1fr;
+  gap: 16px;
+  padding: 16px 20px;
+}
+
+.other-exp li + li {
+  border-top: 1px solid var(--border);
+}
+
+.other-exp-date {
+  color: var(--accent);
+  font-family: var(--font-display);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1000px) {
+  .cards-3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 560px) {
+  .other-exp li {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+}
