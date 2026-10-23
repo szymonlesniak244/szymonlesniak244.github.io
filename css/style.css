@@ -2508,3 +2508,15 @@ a.contact-item:hover {
     gap: 2px;
   }
 }
+
+/* Nagłówki na górze strony: łagodne wejście bez ukrywania treści (szybszy LCP) */
+[data-hero] {
+  animation: hero-in 0.9s var(--ease) both;
+  animation-delay: calc(var(--d, 0) * 90ms);
+}
+
+@keyframes hero-in {
+  from {
+    transform: translateY(18px);
+  }
+}

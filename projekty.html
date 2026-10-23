@@ -9,7 +9,9 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
     <link rel="stylesheet" href="css/style.css" />
     <script>document.documentElement.classList.add("js");</script>
     <script src="js/main.js" defer></script>
@@ -49,7 +51,7 @@
         <div class="container">
           <div class="section-head">
             <span class="eyebrow" data-reveal>Portfolio</span>
-            <h1 id="page-title" data-reveal style="--d: 1">Projekty</h1>
+            <h1 id="page-title" data-hero style="--d: 1">Projekty</h1>
             <p class="lead" data-reveal style="--d: 2">Każdy projekt to nowe narzędzie, którego nauczyłem się, budując coś działającego. Przy każdym piszę, w czym pomogło AI i co sprawdziłem sam.</p>
           </div>
         </div>
@@ -83,7 +85,7 @@
             </article>
             <!-- PROJEKT 2 -->
             <article class="project-card glass" data-tilt data-reveal style="--d: 1">
-              <div class="media-ph"><span>[TU ZRZUT EKRANU / GIF]</span></div>
+              <img class="media" src="assets/img/projekt-2-lawenda.jpg" alt="Strona testowa salonu fryzjerskiego: duży nagłówek, przyciski „Umów wizytę” i „Zobacz cennik” oraz zdjęcie w kształcie kapsuły" width="1280" height="800" loading="lazy" />
               <div class="project-body">
                 <p class="project-num">Projekt 02</p>
                 <h2 class="h3-like">Strony dla salonów z rezerwacjami</h2>
@@ -100,7 +102,7 @@
             </article>
             <!-- PROJEKT 3 -->
             <article class="project-card glass" data-tilt data-reveal style="--d: 2">
-              <div class="media-ph"><span>[TU ZRZUT EKRANU TEJ STRONY]</span></div>
+              <img class="media" src="assets/img/projekt-3-strona.jpg" alt="Strona główna tego portfolio: imię i nazwisko, hasło i karta z przepływem rejestru zgłoszeń IT na ciemnym tle" width="1280" height="800" loading="lazy" />
               <div class="project-body">
                 <p class="project-num">Projekt 03</p>
                 <h2 class="h3-like">Ta strona-CV</h2>
@@ -166,7 +168,7 @@
         </figure>
         <div>
           <h3>Rola AI i moja weryfikacja</h3>
-          <p>AI (Claude) prowadziło mnie krok po kroku przez budowę przepływu. <span class="ph">[TU: co sprawdzałeś sam, np. testowe zgłoszenia i historia uruchomień]</span></p>
+          <p>AI (Claude) prowadziło mnie krok po kroku przez budowę przepływu. Wynik sprawdzałem sam: wysyłałem testowe zgłoszenia i patrzyłem, czy wpis pojawia się na liście, śledziłem historię uruchomień i testowałem, czy e-mail przychodzi tylko przy priorytecie „Wysoki”.</p>
         </div>
         <div class="project-actions">
           <a class="btn btn-ghost" href="#" aria-disabled="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6M9 14h6M9 17h4" /></svg> Opis projektu (PDF) <span class="sr-only">(wkrótce)</span></a>
@@ -177,7 +179,7 @@
 
     <dialog class="modal" id="projekt-2" aria-labelledby="projekt-2-title">
       <button class="modal-close" type="button" data-close aria-label="Zamknij szczegóły projektu">✕</button>
-      <div class="media-ph"><span>[TU WIĘKSZY ZRZUT EKRANU / GIF]</span></div>
+      <img class="media" src="assets/img/projekt-2-lawenda.jpg" alt="Strona testowa salonu fryzjerskiego: duży nagłówek, przyciski „Umów wizytę” i „Zobacz cennik” oraz zdjęcie w kształcie kapsuły" width="1280" height="800" />
       <div class="modal-body">
         <div>
           <p class="project-num">Projekt 02</p>
@@ -195,7 +197,7 @@
         </div>
         <div>
           <h3>Rola AI i moja weryfikacja</h3>
-          <p>Kod pisze Claude Code. Ja ustalam zasady i wygląd, a każdą stronę sprawdzam przed oddaniem. <span class="ph">[TU: przykład błędu, który wyłapałeś]</span></p>
+          <p>Kod pisze Claude Code. Ja ustalam zasady i czuwam nad stroną wizualną i spójnością całości. Przed oddaniem sprawdzam każdą stronę na telefonie i pilnuję, żeby AI nie dopisało treści, których nie ma w danych klienta, np. cen, opinii czy godzin.</p>
         </div>
         <div class="project-actions">
           <a class="btn btn-ghost" href="#" aria-disabled="true"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z" /><path d="M14 3v6h6M9 14h6M9 17h4" /></svg> Opis projektu (PDF) <span class="sr-only">(wkrótce)</span></a>
@@ -206,7 +208,7 @@
 
     <dialog class="modal" id="projekt-3" aria-labelledby="projekt-3-title">
       <button class="modal-close" type="button" data-close aria-label="Zamknij szczegóły projektu">✕</button>
-      <div class="media-ph"><span>[TU ZRZUT EKRANU TEJ STRONY]</span></div>
+      <img class="media" src="assets/img/projekt-3-strona.jpg" alt="Strona główna tego portfolio: imię i nazwisko, hasło i karta z przepływem rejestru zgłoszeń IT na ciemnym tle" width="1280" height="800" loading="lazy" />
       <div class="modal-body">
         <div>
           <p class="project-num">Projekt 03</p>
@@ -216,7 +218,7 @@
         <div class="pse-grid">
           <div class="pse-block"><h3>Cel</h3><p>Pokazać pracodawcy, jak pracuję z AI, zamiast tylko o tym pisać.</p></div>
           <div class="pse-block"><h3>Rozwiązanie</h3><p>Budowana etapami z Claude Code: najpierw szkielet i wygląd (wybrałem jeden z trzech kierunków), potem treści. Czysty HTML, CSS i JavaScript, bez frameworków.</p></div>
-          <div class="pse-block"><h3>Efekt</h3><p>Lekka strona, która działa na telefonie, z obsługą klawiatury i opcji „ogranicz ruch”. <span class="ph">[TU: wynik Lighthouse po publikacji]</span></p></div>
+          <div class="pse-block"><h3>Efekt</h3><p>Lekka strona, która działa na telefonie, z obsługą klawiatury i opcji „ogranicz ruch”. W teście Google Lighthouse ma 100/100 za dostępność, dobre praktyki i SEO.</p></div>
         </div>
         <div>
           <h3>Przebieg krok po kroku</h3>

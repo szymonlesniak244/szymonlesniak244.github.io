@@ -9,7 +9,9 @@
     <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" /></noscript>
     <link rel="stylesheet" href="css/style.css" />
     <script>document.documentElement.classList.add("js");</script>
     <script src="js/main.js" defer></script>
@@ -51,23 +53,23 @@
 
         <div class="container hero-inner">
           <div class="hero-copy">
-            <p class="chip" data-reveal><span class="chip-dot" aria-hidden="true"></span> Otwarty na pracę zdalną<span class="chip-extra"> · AI i automatyzacje</span></p>
+            <p class="chip" data-hero><span class="chip-dot" aria-hidden="true"></span> Otwarty na pracę zdalną<span class="chip-extra"> · AI i automatyzacje</span></p>
 
-            <h1 id="hero-title" data-reveal style="--d: 1">Szymon Leśniak</h1>
+            <h1 id="hero-title" data-hero style="--d: 1">Szymon Leśniak</h1>
 
             <!-- Słowa w efekcie pisania: edytuj listę w data-words -->
-            <p class="hero-role" data-reveal style="--d: 2">
+            <p class="hero-role" data-hero style="--d: 2">
               Teraz poznaję:
               <span class="typewriter" aria-hidden="true" data-words='["Power Automate", "Microsoft Forms", "SharePoint", "automatyzację procesów", "nowe narzędzia AI"]'>Power Automate</span>
               <span class="sr-only">Power Automate, Microsoft Forms, SharePoint, automatyzację procesów i nowe narzędzia AI</span>
             </p>
 
-            <p class="hero-lead" data-reveal style="--d: 3">
+            <p class="hero-lead" data-hero style="--d: 3">
               Student zarządzania na UEK i absolwent technikum informatycznego.
               <strong>AI to moje codzienne narzędzie. Automatyzacji uczę się szybko i w praktyce.</strong>
             </p>
 
-            <div class="hero-cta" data-reveal style="--d: 4">
+            <div class="hero-cta" data-hero style="--d: 4">
               <a class="btn btn-primary" href="projekty.html">
                 Zobacz projekty
                 <svg class="icon icon-arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" /></svg>
@@ -177,7 +179,7 @@
             </article>
 
             <article class="project-card glass" data-tilt data-reveal style="--d: 1">
-              <div class="media-ph"><span>[TU ZRZUT EKRANU / GIF]</span></div>
+              <img class="media" src="assets/img/projekt-2-lawenda.jpg" alt="Strona testowa salonu fryzjerskiego: duży nagłówek, przyciski „Umów wizytę” i „Zobacz cennik” oraz zdjęcie w kształcie kapsuły" width="1280" height="800" loading="lazy" />
               <div class="project-body">
                 <p class="project-num">Projekt 02</p>
                 <h3><a href="projekty.html#projekt-2">Strony dla salonów z rezerwacjami</a></h3>
@@ -187,7 +189,7 @@
             </article>
 
             <article class="project-card glass" data-tilt data-reveal style="--d: 2">
-              <div class="media-ph"><span>[TU ZRZUT EKRANU TEJ STRONY]</span></div>
+              <img class="media" src="assets/img/projekt-3-strona.jpg" alt="Strona główna tego portfolio: imię i nazwisko, hasło i karta z przepływem rejestru zgłoszeń IT na ciemnym tle" width="1280" height="800" loading="lazy" />
               <div class="project-body">
                 <p class="project-num">Projekt 03</p>
                 <h3><a href="projekty.html#projekt-3">Ta strona-CV</a></h3>
