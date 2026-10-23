@@ -1,0 +1,411 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>CV – Szymon Leśniak</title>
+    <!--
+      Źródło CV do PDF. Edytuj teksty tutaj, potem wygeneruj PDF
+      (polecenie jest w README.md). Gotowy plik: assets/pdf/cv-szymon-lesniak.pdf
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <style>
+      :root {
+        --ink: #0b1220;
+        --muted: #4a5568;
+        --line: #e2e8f0;
+        --accent: #0f9c86;
+        --accent-2: #2f6fe0;
+        --side: #f3f7fa;
+        --font-display: "Space Grotesk", system-ui, sans-serif;
+        --font-body: "Inter", system-ui, sans-serif;
+      }
+
+      @page {
+        size: A4;
+        margin: 0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        background: #fff;
+        color: var(--ink);
+        font-family: var(--font-body);
+        font-size: 9.6pt;
+        line-height: 1.45;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .page {
+        display: grid;
+        grid-template-columns: 64mm 1fr;
+        width: 210mm;
+        height: 297mm;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .page::before {
+        /* pasek akcentu na górze */
+        content: "";
+        position: absolute;
+        inset: 0 0 auto 0;
+        height: 3mm;
+        background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      }
+
+      h1,
+      h2,
+      h3 {
+        font-family: var(--font-display);
+        margin: 0;
+        letter-spacing: -0.02em;
+      }
+
+      p {
+        margin: 0;
+      }
+
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      /* Lewa kolumna */
+      .side {
+        background: var(--side);
+        padding: 13mm 7mm 10mm 9mm;
+        display: grid;
+        align-content: start;
+        gap: 6.5mm;
+      }
+
+      .photo {
+        width: 40mm;
+        height: 50mm;
+        object-fit: cover;
+        border-radius: 4mm;
+        border: 0.6mm solid #fff;
+        box-shadow: 0 0 0 0.4mm var(--accent);
+      }
+
+      .side h2 {
+        font-size: 9pt;
+        text-transform: uppercase;
+        letter-spacing: 0.12em;
+        color: var(--accent);
+        margin-bottom: 2.2mm;
+      }
+
+      .contact li {
+        margin-bottom: 1.4mm;
+        overflow-wrap: anywhere;
+      }
+
+      .contact small,
+      .facts small {
+        display: block;
+        color: var(--muted);
+        font-size: 7.6pt;
+      }
+
+      .email {
+        font-size: 8.4pt;
+        white-space: nowrap;
+      }
+
+      .skills li {
+        display: flex;
+        justify-content: space-between;
+        gap: 2mm;
+        padding: 1mm 0;
+        border-bottom: 0.2mm solid var(--line);
+      }
+
+      .skills .lvl {
+        color: var(--muted);
+        font-size: 8pt;
+        white-space: nowrap;
+      }
+
+      .skills .lvl.strong {
+        color: var(--accent);
+        font-weight: 600;
+      }
+
+      .group-title {
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 8.4pt;
+        margin: 2mm 0 0.5mm;
+      }
+
+      .facts li {
+        margin-bottom: 1.6mm;
+      }
+
+      /* Prawa kolumna */
+      .main {
+        padding: 13mm 11mm 9mm 9mm;
+        display: grid;
+        align-content: start;
+        gap: 5mm;
+      }
+
+      .name {
+        font-size: 25pt;
+        line-height: 1;
+      }
+
+      .role {
+        margin-top: 2mm;
+        font-family: var(--font-display);
+        font-size: 11pt;
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      .profile {
+        color: #2d3748;
+      }
+
+      .main h2 {
+        display: flex;
+        align-items: center;
+        gap: 2.5mm;
+        font-size: 11pt;
+        margin-bottom: 2mm;
+      }
+
+      .main h2::after {
+        content: "";
+        flex: 1;
+        height: 0.3mm;
+        background: var(--line);
+      }
+
+      .entry {
+        margin-bottom: 2.6mm;
+      }
+
+      .entry-head {
+        display: flex;
+        justify-content: space-between;
+        gap: 3mm;
+        align-items: baseline;
+      }
+
+      .entry h3 {
+        font-size: 10pt;
+      }
+
+      .date {
+        color: var(--accent);
+        font-family: var(--font-display);
+        font-weight: 600;
+        font-size: 8.4pt;
+        white-space: nowrap;
+      }
+
+      .where {
+        color: var(--muted);
+        font-size: 8.6pt;
+      }
+
+      .entry ul {
+        margin-top: 0.8mm;
+      }
+
+      .entry li {
+        position: relative;
+        padding-left: 3.4mm;
+      }
+
+      .entry li::before {
+        content: "";
+        position: absolute;
+        left: 0.4mm;
+        top: 0.62em;
+        width: 1.3mm;
+        height: 1.3mm;
+        border-radius: 50%;
+        background: var(--accent);
+      }
+
+      .tags {
+        color: var(--muted);
+        font-size: 8.2pt;
+      }
+
+      .other li {
+        display: flex;
+        justify-content: space-between;
+        gap: 3mm;
+        padding: 0.6mm 0;
+      }
+
+      .rodo {
+        position: absolute;
+        left: 73mm;
+        right: 11mm;
+        bottom: 7mm;
+        color: var(--muted);
+        font-size: 6.8pt;
+        line-height: 1.35;
+      }
+
+      @media screen {
+        body {
+          background: #cbd5e0;
+          padding: 10mm 0;
+        }
+
+        .page {
+          box-shadow: 0 10px 40px rgb(0 0 0 / 0.25);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <!-- ============ LEWA KOLUMNA ============ -->
+      <aside class="side">
+        <img class="photo" src="../assets/img/portret-cv.jpg" alt="Szymon Leśniak" width="360" height="450" />
+
+        <section>
+          <h2>Kontakt</h2>
+          <ul class="contact">
+            <li><small>E-mail</small><span class="email">szymon.lesniak244@gmail.com</span></li>
+            <li><small>Miejsce</small>Kraków · praca zdalna</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Umiejętności</h2>
+          <p class="group-title">AI</p>
+          <ul class="skills">
+            <li>Claude <span class="lvl strong">swobodnie</span></li>
+            <li>Claude Code <span class="lvl">praktyka</span></li>
+          </ul>
+          <p class="group-title">Microsoft 365</p>
+          <ul class="skills">
+            <li>Power Automate <span class="lvl">uczę się</span></li>
+            <li>SharePoint <span class="lvl">uczę się</span></li>
+            <li>Microsoft Forms <span class="lvl">podstawy</span></li>
+            <li>Excel <span class="lvl">podstawy</span></li>
+          </ul>
+          <p class="group-title">Technika</p>
+          <ul class="skills">
+            <li>HTML/CSS <span class="lvl">podstawy</span></li>
+            <li>Programowanie <span class="lvl">podstawy</span></li>
+            <li>Sieci komputerowe <span class="lvl">INF.02</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Języki</h2>
+          <ul class="facts">
+            <li>Polski <small>ojczysty</small></li>
+            <li>Angielski <small>B2</small></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Dostępność</h2>
+          <ul class="facts">
+            <li>10–20 h tygodniowo <small>zdalnie, elastycznie</small></li>
+          </ul>
+        </section>
+      </aside>
+
+      <!-- ============ PRAWA KOLUMNA ============ -->
+      <main class="main">
+        <header>
+          <h1 class="name">Szymon Leśniak</h1>
+          <p class="role">AI i automatyzacje · szybko się uczę</p>
+        </header>
+
+        <p class="profile">
+          Student 2. roku zarządzania na UEK i technik informatyk. Na co dzień pracuję z AI, a teraz uczę się
+          automatyzacji w Power Automate. Nowe narzędzia poznaję najszybciej, budując na nich coś działającego.
+          AI używam wszędzie, gdzie pomaga, ale każdy wynik sprawdzam, zanim go oddam.
+        </p>
+
+        <section>
+          <h2>Doświadczenie</h2>
+          <div class="entry">
+            <div class="entry-head"><h3>Sekcja sponsoringu</h3><span class="date">2025 – obecnie</span></div>
+            <p class="where">Niezależne Zrzeszenie Studentów (NZS)</p>
+            <ul>
+              <li>Nawiązuję i utrzymuję kontakty biznesowe z partnerami organizacji.</li>
+              <li>Wcześniej działałem w grupach projektowych, które tworzyły wydarzenia studenckie.</li>
+              <li>Korzystam z AI, żeby usprawnić pracę i osiągać lepsze wyniki.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><h3>Technik informatyk</h3><span class="date">2024</span></div>
+            <ul>
+              <li>Zlecenia z zakresu sieci komputerowych w punktach handlowych.</li>
+            </ul>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><h3>Praktyki zawodowe</h3><span class="date">2023</span></div>
+            <p class="where">Firma sieciowa, dostawca internetu</p>
+          </div>
+          <ul class="other">
+            <li><span>Instruktor narciarstwa zjazdowego</span><span class="date">od 2023, co sezon</span></li>
+            <li><span>Instruktor w parku linowym</span><span class="date">2023 i 2025</span></li>
+            <li><span>Kierowca (Uber)</span><span class="date">2026</span></li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>Projekty</h2>
+          <div class="entry">
+            <h3>Rejestr zgłoszeń IT</h3>
+            <p>Formularz zgłoszeń, z którego przepływ Power Automate tworzy wpisy na liście SharePoint, a przy wysokim priorytecie wysyła e-mail.</p>
+            <p class="tags">Power Automate · Microsoft Forms · SharePoint · Outlook</p>
+          </div>
+          <div class="entry">
+            <h3>Strony dla salonów z rezerwacjami</h3>
+            <p>Ankieta dla klienta i spisane zasady, według których AI buduje stronę z kalendarzem rezerwacji. Powstały 2 strony testowe.</p>
+            <p class="tags">Claude Code · HTML/CSS · JSON · SimplyBook</p>
+          </div>
+          <div class="entry">
+            <h3>Strona-CV</h3>
+            <p>Moje portfolio budowane z AI etapami: ja decyduję o treści i wyglądzie i wszystko sprawdzam, AI pisze kod.</p>
+            <p class="tags">Claude Code · HTML/CSS · JavaScript</p>
+          </div>
+        </section>
+
+        <section>
+          <h2>Wykształcenie</h2>
+          <div class="entry">
+            <div class="entry-head"><h3>Uniwersytet Ekonomiczny w Krakowie</h3><span class="date">2025 – obecnie</span></div>
+            <p class="where">Zarządzanie, studia I stopnia, 2. rok</p>
+          </div>
+          <div class="entry">
+            <div class="entry-head"><h3>Technikum informatyczne</h3><span class="date">2020 – 2025</span></div>
+            <p class="where">Technik informatyk: kwalifikacje INF.02 i INF.03</p>
+          </div>
+        </section>
+      </main>
+
+      <p class="rodo">
+        Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji
+        zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. (RODO).
+      </p>
+    </div>
+  </body>
+</html>
