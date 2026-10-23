@@ -2520,3 +2520,83 @@ a.contact-item:hover {
     transform: translateY(18px);
   }
 }
+
+/* =========================================================
+   TELEFON: kompozycja wyśrodkowana
+   (nagłówki, hero, przyciski, zdjęcie i kontakt na środku;
+   dłuższe listy w kartach zostają wyrównane do lewej)
+   ========================================================= */
+@media (max-width: 900px) {
+  .avatar {
+    width: min(300px, 100%);
+    max-width: none;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .hero-copy,
+  .section-head,
+  .page-hero .section-head,
+  .about-text > h2,
+  .about-text > .lead,
+  .contact-copy,
+  .teaser,
+  .skills-legend,
+  .other-exp-title {
+    text-align: center;
+    justify-items: center;
+  }
+
+  .hero-cta,
+  .process-mini,
+  .skill-cloud,
+  .skills-legend,
+  .footer-inner,
+  .footer-links {
+    justify-content: center;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .section-head-row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* linia z obu stron małego nagłówka */
+  .eyebrow::after {
+    content: "";
+    width: 28px;
+    height: 1px;
+    background: currentColor;
+  }
+
+  .hero-lead {
+    margin-inline: auto;
+  }
+
+  .about-intro {
+    justify-items: center;
+  }
+
+  .about-text {
+    justify-items: center;
+  }
+
+  .facts {
+    width: 100%;
+  }
+
+  .fact {
+    text-align: center;
+  }
+}
+
+/* Odstęp między tytułem podstrony a tekstem pod nim */
+.page-hero .section-head {
+  gap: 20px;
+}
