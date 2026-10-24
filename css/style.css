@@ -2873,3 +2873,47 @@ a.contact-item:hover {
     content: "↓";
   }
 }
+
+/* =========================================================
+   SKALA UMIEJĘTNOŚCI: 3 poziomy + osobny stan „w trakcie nauki”
+   (żeby narzędzie, którego się uczę, nie wyglądało gorzej niż „podstawy”)
+   ========================================================= */
+.meter {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.legend-meter {
+  grid-template-columns: repeat(3, 14px);
+}
+
+.meter-learning {
+  grid-template-columns: 1fr;
+}
+
+.meter-learning span {
+  border: 0;
+  background: linear-gradient(90deg, rgb(45 226 196 / 0.15), var(--accent), rgb(76 141 255 / 0.15));
+  background-size: 200% 100%;
+  animation: learning 2.4s ease-in-out infinite;
+}
+
+.legend-meter.legend-learning {
+  grid-template-columns: 48px;
+}
+
+.legend-meter.legend-learning i {
+  background: linear-gradient(90deg, rgb(45 226 196 / 0.2), var(--accent), rgb(76 141 255 / 0.2));
+}
+
+.skill-level.is-learning {
+  color: var(--accent);
+}
+
+@keyframes learning {
+  0% {
+    background-position: 100% 0;
+  }
+  100% {
+    background-position: -100% 0;
+  }
+}
