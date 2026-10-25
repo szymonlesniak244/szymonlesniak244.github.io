@@ -2917,3 +2917,14 @@ a.contact-item:hover {
     background-position: -100% 0;
   }
 }
+
+/* Okno projektu: zdjęcie wypełnia całą szerokość (bez białych pasków po bokach) */
+.modal img.media {
+  width: 100%;
+  height: auto;
+  max-height: none;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  object-position: center top;
+  background: var(--bg-elev);
+}
