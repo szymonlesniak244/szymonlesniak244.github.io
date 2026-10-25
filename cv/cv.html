@@ -165,8 +165,8 @@
       /* Prawa kolumna */
       .main {
         padding: 13mm 11mm 9mm 9mm;
-        display: grid;
-        align-content: start;
+        display: flex;
+        flex-direction: column;
         gap: 3.6mm;
       }
 
@@ -263,10 +263,7 @@
       }
 
       .rodo {
-        position: absolute;
-        left: 73mm;
-        right: 11mm;
-        bottom: 7mm;
+        margin-top: auto;
         color: var(--muted);
         font-size: 6.8pt;
         line-height: 1.35;
@@ -348,7 +345,7 @@
 
         <p class="profile">
           Student 2. roku zarządzania na UEK i technik informatyk. Na co dzień pracuję z AI, a teraz uczę się
-          automatyzacji w Power Automate. Nowe narzędzia poznaję najszybciej, budując na nich coś działającego.
+          automatyzacji w Power Automate. Nowe narzędzia poznaję w praktyce, budując z ich pomocą coś działającego.
           AI używam wszędzie, gdzie pomaga, ale każdy wynik sprawdzam, zanim go oddam. Nie wklejam do AI danych osobowych ani danych klientów.
         </p>
 
@@ -366,7 +363,7 @@
           </div>
           <div class="entry">
             <h3>Strona-CV</h3>
-            <p>Moje portfolio budowane z AI etapami: ja decyduję o treści i wyglądzie i wszystko sprawdzam, AI pisze kod. Lighthouse: 100/100 za dostępność, dobre praktyki i SEO, wydajność 99 (komputer).</p>
+            <p>Portfolio budowane z AI: ja decyduję o treści i wyglądzie i sprawdzam wynik, AI pisze kod. Lighthouse: 100/100 (dostępność, dobre praktyki, SEO), wydajność 99.</p>
             <p class="tags">Claude Code · HTML/CSS · JavaScript</p>
           </div>
         </section>
@@ -379,7 +376,7 @@
             <ul>
               <li>Nawiązuję i utrzymuję kontakty biznesowe z partnerami organizacji.</li>
               <li>Zaczynałem w grupach projektowych, które tworzyły wydarzenia studenckie.</li>
-              <li>Używam AI do wyszukiwania informacji o potencjalnych partnerach i do porównywania plików, np. z listą wykluczonych firm.</li>
+              <li>Od 2026 używam AI do wyszukiwania partnerów i porównywania plików (np. z listą wykluczonych firm). Sprawdzam wyniki: wyłapałem zmyślone przez AI dane kontaktowe firmy.</li>
             </ul>
           </div>
           <div class="entry">
@@ -392,7 +389,7 @@
             <div class="entry-head"><h3>Praktyki zawodowe: informatyk</h3><span class="date">2023</span></div>
             <p class="where">Firma z branży turystycznej</p>
             <ul>
-              <li>Wspierałem informatyka firmy: wyjazdy na miejsce i rozwiązywanie bieżących problemów IT.</li>
+              <li>Wspierałem informatyka firmy: jeździliśmy tam, gdzie był problem, i rozwiązywaliśmy go na miejscu.</li>
             </ul>
           </div>
           <div class="entry">
@@ -418,12 +415,13 @@
             <p class="where">Technik informatyk: kwalifikacje INF.02 i INF.03</p>
           </div>
         </section>
-      </main>
 
-      <p class="rodo">
+        <p class="rodo">
         Wyrażam zgodę na przetwarzanie moich danych osobowych dla potrzeb niezbędnych do realizacji procesu rekrutacji
         zgodnie z Rozporządzeniem Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. (RODO).
       </p>
+      </main>
+
     </div>
   </body>
 </html>
