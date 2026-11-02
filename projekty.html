@@ -75,11 +75,29 @@
             <img class="media" src="assets/img/projekt-1.webp" alt="Opis zrzutu" loading="lazy" width="1600" height="1000">
           -->
           <div class="projects-grid">
+            <!-- PROJEKT REZERWACJE -->
+            <article class="project-card glass" data-tilt data-reveal style="--d: 0">
+              <img class="media" src="assets/img/projekt-rezerwacje-kalendarz-800.jpg" srcset="assets/img/projekt-rezerwacje-kalendarz-800.jpg 800w, assets/img/projekt-rezerwacje-kalendarz.jpg 1280w" sizes="(max-width: 960px) 100vw, 920px" alt="Panel salonu: kalendarz dnia z kolumną na każdą osobę i fikcyjnymi wizytami" width="1280" height="800" loading="lazy" />
+              <div class="project-body">
+                <p class="project-num">Projekt 01</p>
+                <h2 class="h3-like">System rezerwacji dla salonów</h2>
+                <ul class="tags" aria-label="Narzędzia"><li>Claude Code</li><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Vercel</li><li>Resend</li><li>Playwright</li></ul>
+                <ol class="pse">
+                  <li><b>Cel</b><span>Zbudować własny system rezerwacji, który można skonfigurować dla dowolnego salonu.</span></li>
+                  <li><b>Rozwiązanie</b><span>Rezerwacja online osadzona na stronie salonu, potwierdzenia i przypomnienia e-mail oraz panel z kalendarzem, usługami, grafikiem i ustawieniami.</span></li>
+                  <li><b>Efekt</b><span>System działa publicznie na 2 fikcyjnych salonach. Podwójną rezerwację blokuje baza, a główne ścieżki sprawdzają testy na telefonie i komputerze.</span></li>
+                </ol>
+                <div class="project-actions">
+                  <button class="btn btn-primary btn-sm" type="button" data-open="projekt-rezerwacje">Szczegóły</button>
+                  <a class="btn btn-ghost btn-sm" href="https://szymonlesniak244.github.io/strony-salonow/lawenda/index.html#rezerwacja">Wypróbuj rezerwację</a>
+                </div>
+              </div>
+            </article>
             <!-- PROJEKT 1 -->
             <article class="project-card glass" data-tilt data-reveal style="--d: 0">
               <img class="media" src="assets/img/projekt-1-przeplyw-800.jpg" srcset="assets/img/projekt-1-przeplyw-800.jpg 800w, assets/img/projekt-1-przeplyw.jpg 1536w" sizes="(max-width: 960px) 100vw, 920px" alt="Przepływ w Power Automate: nowa odpowiedź z formularza, utworzenie elementu na liście SharePoint i warunek wysyłający e-mail" width="1536" height="688" loading="lazy" />
               <div class="project-body">
-                <p class="project-num">Projekt 01</p>
+                <p class="project-num">Projekt 02</p>
                 <h2 class="h3-like">Automatyzacje w Power Automate</h2>
                 <ul class="tags" aria-label="Narzędzia"><li>Power Automate</li><li>Microsoft Forms</li><li>SharePoint</li><li>Outlook</li></ul>
                 <ol class="pse">
@@ -96,13 +114,13 @@
             <article class="project-card glass" data-tilt data-reveal style="--d: 1">
               <img class="media" src="assets/img/projekt-2-lawenda-800.jpg" srcset="assets/img/projekt-2-lawenda-800.jpg 800w, assets/img/projekt-2-lawenda.jpg 1280w" sizes="(max-width: 960px) 100vw, 920px" alt="Strona testowa salonu fryzjerskiego: duży nagłówek, przyciski „Umów wizytę” i „Zobacz cennik” oraz zdjęcie w kształcie kapsuły" width="1280" height="800" loading="lazy" />
               <div class="project-body">
-                <p class="project-num">Projekt 02</p>
+                <p class="project-num">Projekt 03</p>
                 <h2 class="h3-like">Strony dla salonów z rezerwacjami</h2>
-                <ul class="tags" aria-label="Narzędzia"><li>Claude Code</li><li>HTML/CSS</li><li>JSON</li><li>SimplyBook</li></ul>
+                <ul class="tags" aria-label="Narzędzia"><li>Claude Code</li><li>HTML/CSS</li><li>JSON</li></ul>
                 <ol class="pse">
                   <li><b>Cel</b><span>Szybko tworzyć lekkie strony dla małych salonów.</span></li>
                   <li><b>Rozwiązanie</b><span>Ankieta dla klienta, moje zasady dla AI i kalendarz rezerwacji.</span></li>
-                  <li><b>Efekt</b><span>2 strony testowe z kalendarzem rezerwacji sprawdzonym na koncie testowym.</span></li>
+                  <li><b>Efekt</b><span>2 strony testowe z działającą rezerwacją.</span></li>
                 </ol>
                 <div class="project-actions">
                   <button class="btn btn-primary btn-sm" type="button" data-open="projekt-2">Szczegóły</button>
@@ -114,7 +132,7 @@
             <article class="project-card glass" data-tilt data-reveal style="--d: 2">
               <img class="media" src="assets/img/projekt-3-strona-800.jpg" srcset="assets/img/projekt-3-strona-800.jpg 800w, assets/img/projekt-3-strona.jpg 1280w" sizes="(max-width: 960px) 100vw, 920px" alt="Strona główna tego portfolio: imię i nazwisko, hasło i karta z przepływem rejestru zgłoszeń IT na ciemnym tle" width="1280" height="800" loading="lazy" />
               <div class="project-body">
-                <p class="project-num">Projekt 03</p>
+                <p class="project-num">Projekt 04</p>
                 <h2 class="h3-like">Ta strona-CV</h2>
                 <ul class="tags" aria-label="Narzędzia"><li>Claude Code</li><li>HTML/CSS</li><li>JavaScript</li></ul>
                 <ol class="pse">
@@ -154,12 +172,46 @@
     </main>
 
     <!-- ============ OKNA ZE SZCZEGÓŁAMI PROJEKTÓW ============ -->
+    <dialog class="modal" id="projekt-rezerwacje" aria-labelledby="projekt-rezerwacje-title">
+      <button class="modal-close" type="button" data-close aria-label="Zamknij szczegóły projektu">✕</button>
+      <img class="media" src="assets/img/projekt-rezerwacje-kalendarz-800.jpg" srcset="assets/img/projekt-rezerwacje-kalendarz-800.jpg 800w, assets/img/projekt-rezerwacje-kalendarz.jpg 1280w" sizes="(max-width: 960px) 100vw, 920px" alt="Panel salonu: kalendarz dnia z kolumną na każdą osobę i fikcyjnymi wizytami" width="1280" height="800" loading="lazy" />
+      <div class="modal-body">
+        <div>
+          <p class="project-num">Projekt 01</p>
+          <h2 id="projekt-rezerwacje-title">System rezerwacji dla salonów</h2>
+        </div>
+        <ul class="tags" aria-label="Narzędzia"><li>Claude Code</li><li>Next.js</li><li>TypeScript</li><li>Supabase</li><li>Vercel</li><li>Resend</li><li>Playwright</li></ul>
+        <div class="pse-grid">
+          <div class="pse-block"><h3>Cel</h3><p>Zbudować własny system rezerwacji, który można skonfigurować dla dowolnego salonu.</p></div>
+          <div class="pse-block"><h3>Rozwiązanie</h3><p>Rezerwacja online osadzona na stronie salonu, potwierdzenia i przypomnienia e-mail oraz panel z kalendarzem, usługami, grafikiem i ustawieniami.</p></div>
+          <div class="pse-block"><h3>Efekt</h3><p>System działa publicznie na 2 fikcyjnych salonach. Podwójną rezerwację blokuje baza, a główne ścieżki sprawdzają testy na telefonie i komputerze.</p></div>
+        </div>
+        <figure class="modal-figure">
+          <img src="assets/img/projekt-rezerwacje-rezerwacja.jpg" alt="Rezerwacja online: wybór osoby, dnia i godziny wizyty" width="1280" height="800" loading="lazy" />
+          <figcaption>Rezerwacja online: klient wybiera usługę, osobę, dzień i godzinę.</figcaption>
+        </figure>
+        <figure class="modal-figure">
+          <img src="assets/img/projekt-rezerwacje-zespol.jpg" alt="Panel salonu: lista zespołu ze stanowiskami i godzinami pracy" width="1280" height="800" loading="lazy" />
+          <figcaption>Panel salonu: zespół i godziny pracy. Wszystkie dane są fikcyjne.</figcaption>
+        </figure>
+        <div>
+          <h3>Rola AI i moja praca</h3>
+          <p>Kod pisze Claude Code. Ja ustalam, co system ma robić, podejmuję decyzje, testuję na telefonie i zgłaszam poprawki.</p>
+        </div>
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://szymonlesniak244.github.io/strony-salonow/lawenda/index.html#rezerwacja">Wypróbuj w Lawendzie</a>
+          <a class="btn btn-ghost" href="https://szymonlesniak244.github.io/strony-salonow/luna/rezerwacja.html">Wypróbuj w Lunie</a>
+          <button class="btn btn-ghost" type="button" data-close>Zamknij</button>
+        </div>
+      </div>
+    </dialog>
+
     <dialog class="modal" id="projekt-1" aria-labelledby="projekt-1-title">
       <button class="modal-close" type="button" data-close aria-label="Zamknij szczegóły projektu">✕</button>
       <img class="media" src="assets/img/projekt-1-przeplyw-800.jpg" srcset="assets/img/projekt-1-przeplyw-800.jpg 800w, assets/img/projekt-1-przeplyw.jpg 1536w" sizes="(max-width: 960px) 100vw, 920px" alt="Przepływ w Power Automate: nowa odpowiedź z formularza, utworzenie elementu na liście SharePoint i warunek wysyłający e-mail" width="1536" height="688" />
       <div class="modal-body">
         <div>
-          <p class="project-num">Projekt 01</p>
+          <p class="project-num">Projekt 02</p>
           <h2 id="projekt-1-title">Automatyzacje w Power Automate</h2>
         </div>
         <ul class="tags" aria-label="Narzędzia"><li>Power Automate</li><li>Microsoft Forms</li><li>SharePoint</li><li>Outlook</li></ul>
@@ -199,18 +251,18 @@
       <img class="media" src="assets/img/projekt-2-lawenda-800.jpg" srcset="assets/img/projekt-2-lawenda-800.jpg 800w, assets/img/projekt-2-lawenda.jpg 1280w" sizes="(max-width: 960px) 100vw, 920px" alt="Strona testowa salonu fryzjerskiego: duży nagłówek, przyciski „Umów wizytę” i „Zobacz cennik” oraz zdjęcie w kształcie kapsuły" width="1280" height="800" />
       <div class="modal-body">
         <div>
-          <p class="project-num">Projekt 02</p>
+          <p class="project-num">Projekt 03</p>
           <h2 id="projekt-2-title">Strony dla salonów z rezerwacjami</h2>
         </div>
-        <ul class="tags" aria-label="Narzędzia"><li>Claude Code</li><li>HTML/CSS</li><li>JSON</li><li>SimplyBook</li></ul>
+        <ul class="tags" aria-label="Narzędzia"><li>Claude Code</li><li>HTML/CSS</li><li>JSON</li></ul>
         <div class="pse-grid">
           <div class="pse-block"><h3>Cel</h3><p>Szybko tworzyć lekkie, dostępne strony dla małych salonów (fryzjer, barber, kosmetyka) z rezerwacją online.</p></div>
-          <div class="pse-block"><h3>Rozwiązanie</h3><p>Klient wypełnia ankietę w przeglądarce i pobiera plik z danymi. Spisałem zasady dla AI: jakość, wygląd na telefonie, dostępność i prywatność. Na tej podstawie Claude Code buduje stronę z kalendarzem rezerwacji SimplyBook.</p></div>
-          <div class="pse-block"><h3>Efekt</h3><p>Powstały 2 strony testowe, każda z innym motywem i kalendarzem rezerwacji SimplyBook sprawdzonym na koncie testowym. W wersji demo proces rezerwacji pokazuję na zrzutach.</p></div>
+          <div class="pse-block"><h3>Rozwiązanie</h3><p>Klient wypełnia ankietę w przeglądarce i pobiera plik z danymi. Spisałem zasady dla AI: jakość, wygląd na telefonie, dostępność i prywatność. Na tej podstawie Claude Code buduje stronę z kalendarzem rezerwacji.</p></div>
+          <div class="pse-block"><h3>Efekt</h3><p>Powstały 2 strony testowe, każda z innym motywem i działającą rezerwacją, którą można przejść do końca.</p></div>
         </div>
         <div>
           <h3>Przebieg krok po kroku</h3>
-          <ol class="steps-list"><li>Klient wypełnia ankietę: usługi, ceny, godziny, zespół.</li><li>Ankieta zapisuje dane w pliku, a schemat sprawdza, czy niczego w nim nie brakuje.</li><li>AI buduje strony według moich zasad, każdą z innym motywem.</li><li>Osadzam kalendarz rezerwacji SimplyBook.</li><li>Sprawdzam stronę na telefonie i komputerze.</li></ol>
+          <ol class="steps-list"><li>Klient wypełnia ankietę: usługi, ceny, godziny, zespół.</li><li>Ankieta zapisuje dane w pliku, a schemat sprawdza, czy niczego w nim nie brakuje.</li><li>AI buduje strony według moich zasad, każdą z innym motywem.</li><li>Osadzam kalendarz rezerwacji.</li><li>Sprawdzam stronę na telefonie i komputerze.</li></ol>
         </div>
         <div>
           <h3>Rola AI i moja weryfikacja</h3>
@@ -230,7 +282,7 @@
       <img class="media" src="assets/img/projekt-3-strona-800.jpg" srcset="assets/img/projekt-3-strona-800.jpg 800w, assets/img/projekt-3-strona.jpg 1280w" sizes="(max-width: 960px) 100vw, 920px" alt="Strona główna tego portfolio: imię i nazwisko, hasło i karta z przepływem rejestru zgłoszeń IT na ciemnym tle" width="1280" height="800" loading="lazy" />
       <div class="modal-body">
         <div>
-          <p class="project-num">Projekt 03</p>
+          <p class="project-num">Projekt 04</p>
           <h2 id="projekt-3-title">Ta strona-CV</h2>
         </div>
         <ul class="tags" aria-label="Narzędzia"><li>Claude Code</li><li>HTML/CSS</li><li>JavaScript</li></ul>
