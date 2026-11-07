@@ -3,7 +3,6 @@
 // =========================================================
 
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
 
 // --- Nagłówek: tło po przewinięciu ---
 function initHeader() {
@@ -122,28 +121,6 @@ function initTypewriter() {
   setTimeout(step, 2200);
 }
 
-// --- Przechylanie kart projektów za kursorem ---
-function initTilt() {
-  if (reduceMotion || !finePointer) return;
-  document.querySelectorAll("[data-tilt]").forEach((card) => {
-    card.addEventListener("pointermove", (e) => {
-      const r = card.getBoundingClientRect();
-      const x = (e.clientX - r.left) / r.width;
-      const y = (e.clientY - r.top) / r.height;
-      card.classList.add("is-tilting");
-      card.style.setProperty("--ry", `${(x - 0.5) * 8}deg`);
-      card.style.setProperty("--rx", `${(0.5 - y) * 8}deg`);
-      card.style.setProperty("--mx", `${x * 100}%`);
-      card.style.setProperty("--my", `${y * 100}%`);
-    });
-    card.addEventListener("pointerleave", () => {
-      card.classList.remove("is-tilting");
-      card.style.setProperty("--rx", "0deg");
-      card.style.setProperty("--ry", "0deg");
-    });
-  });
-}
-
 // --- Okna z szczegółami projektów (natywny <dialog>) ---
 function initModals() {
   const openModal = (id) => {
@@ -205,7 +182,6 @@ initHeader();
 initNav();
 initReveal();
 initTypewriter();
-initTilt();
 initModals();
 initCopy();
 initDisabledLinks();
