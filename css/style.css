@@ -2993,3 +2993,41 @@ main {
     height: 60%;
   }
 }
+
+
+/* =========================================================
+   DRUGI AKCENT: koral (między różem a pomarańczem)
+   ========================================================= */
+:root {
+  --coral: #ff8a73;
+}
+
+/* Druga część nagłówków sekcji */
+.gradient-text {
+  color: var(--coral);
+}
+
+/* Koralowa poświata w lewym dolnym rogu nagłówka strony */
+.blob-2 {
+  display: block;
+  width: 50vmax;
+  height: 50vmax;
+  bottom: -28vmax;
+  left: -18vmax;
+  background: radial-gradient(circle, rgb(255 138 115 / 0.16), transparent 62%);
+}
+
+/* Poświaty sekcji: na zmianę mięta i koral */
+.section:nth-of-type(odd)::before {
+  background: radial-gradient(closest-side, rgb(255 138 115 / 0.06), transparent);
+}
+
+/* Wyspy kropek z klockami na marginesie, żeby nie wchodziły pod tekst */
+.section::after {
+  right: -240px;
+  opacity: 0.6;
+}
+
+.section:nth-of-type(odd)::after {
+  left: -240px;
+}
