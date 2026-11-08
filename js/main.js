@@ -178,19 +178,6 @@ function initYear() {
   document.querySelectorAll("[data-year]").forEach((el) => (el.textContent = new Date().getFullYear()));
 }
 
-// --- Droga różowego impulsu w tle: od startu linii przepływu do jej końca ---
-function initImpuls() {
-  const main = document.querySelector("main");
-  if (!main) return;
-  const set = () => {
-    const droga = main.offsetHeight - window.innerHeight * 0.92 - 160 - 120;
-    main.style.setProperty("--impuls-droga", `${Math.max(0, droga)}px`);
-  };
-  set();
-  window.addEventListener("resize", set);
-  window.addEventListener("load", set);
-}
-
 initHeader();
 initNav();
 initReveal();
@@ -199,4 +186,3 @@ initModals();
 initCopy();
 initDisabledLinks();
 initYear();
-initImpuls();
